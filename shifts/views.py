@@ -7,3 +7,7 @@ def shifts(request):
     df1.to_html("/home/lmr/Python/django/hsshifts/shifts/templates/shift.html", index=False)
     template = loader.get_template('shift.html')
     return HttpResponse(template.render())
+
+def main(request):
+  template = loader.get_template('main.html')
+  return HttpResponse(template.render())
